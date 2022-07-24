@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry's Project for COMP 2132</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+
+    <script src="./scripts/comp2132Project.js" defer></script>
+    <!-- <link rel="stylesheet" href="./styles/comp2132Project.css"> -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/popup.css">
+
+    
+
+</head>
+
+<body>
+
+    <div>
+        <h1>Welcome to the Dice Game!</h1>
+    </div>
+
+    <div id="popup">
+        <div class="wrapper">
+            <h2>Winner: <span id="winner"></span></h2>
+            <p id="description"></p>
+            <button id="closePopup">Continue</button>
+
+        </div>
+    </div>
+
+    <div id="grid">
+        <div id="leftSide">
+            <h2>Player (You) </h2>
+            <div id="playerDieResults">
+                <img id="playerDice1" src="./images/dice1.png">
+                <img id="playerDice2" src="./images/dice1.png">
+            </div>
+            <div id="playerScores">
+            <p>Current Score: <span id="playerCurrentScore"></span></p>
+            <p>Total Score: <span id="playerTotalScore"></span></p>
+        </div>
+        </div>
+
+
+
+        <div id="rightSide">
+            <h2>CPU</h2>
+            <div id="cpuDieResults">
+                <img id="cpuDice1" src="./images/dice1.png">
+                <img id="cpuDice2" src="./images/dice1.png">
+            </div>
+            <div id="cpuScores">
+            <p>Current Score: <span id="cpuCurrentScore"></span></p>
+            <p>Total Score: <span id="cpuTotalScore"></span></p>
+        </div>
+        </div>
+    </div>
+
+<div>
+    <button id="rollDie">Roll!</button>
+    <button id="newGame">New Game</button>
+</div>
+</body>
+
+</html>
